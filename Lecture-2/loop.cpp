@@ -5,14 +5,14 @@ int main()
 {
     int a,b,c,sum=0;
     // TO FIND SUM
-    // cout<<"Enter a number: ";
-    // cin>>a;
+    cout<<"Enter a number: ";
+    cin>>a;
 
-    // for(int i=0; i<=a; i++) {
-    //     sum = sum + i;
-    // }
+    for(int i=0; i<=a; i++) {
+        sum = sum + i;
+    }
 
-    // cout<<"sum is: "<<sum;
+    cout<<"sum is: "<<sum;
 
 //  TAKE INPUT FROM USER AND PRINT UNNTIL IT IS POSITIVE
 // While Loop
