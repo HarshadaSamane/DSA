@@ -5,6 +5,7 @@ int main()
 {
 
     int n, i, j;
+    //Inverted number pattern
     cout<<"Enter  the no. of rows: ";
     cin>>n;
 
@@ -102,7 +103,7 @@ int main()
     }
 
     // Zig-Zag Pattern for
-    cout << "Enter  the no. of rows: ";
+    cout << "Enter  the no. of stars: ";
     cin >> n;
 
     for (i = 1; i <= 3; i++){
