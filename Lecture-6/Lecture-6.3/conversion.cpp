@@ -32,13 +32,13 @@ int hexadecimalToDecimal(string m) {
     int ans = 0;
     int x = 1;
 
-    int s = n.size();
+    int s = m.size();
     for(int i=s-1; i>=0; i--) {
-        if(n[i] >= '0' && n[i] <= '9') {
-            ans = ans + x*(n[i]-'0');
+        if(m[i] >= '0' && m[i] <= '9') {
+            ans = ans + x*(m[i]-'0');
         }
-        else if(n[i] >= 'A' && n[i] <= 'F') {
-            ans = ans + x*(n[i]-'A' + 10);
+        else if(m[i] >= 'A' && m[i] <= 'F') {
+            ans = ans + x*(m[i]-'A' + 10);
         }
         x *= 16;
     }
@@ -47,29 +47,30 @@ int hexadecimalToDecimal(string m) {
 }
 
 int decimalToBinary(int n) {
-    int ans = 0;
-    int x = 1;
-
-    while( )  
+    if (n == 0) {
+        return 0; // Base case: When n is 0, return 0.
+    }
+    else {
+        return n % 2 + 10 * decimalToBinary(n / 2);
+    }
 }
 
 int main () {
 
      
-    //int n;
-    // cout<<"Enter a binary num to convert: ";
-    // cin>>n;
+    int n;
+    cout<<"Enter a binary num to convert: ";
+    cin>>n;
     
-    // cout <<"Decimal num is: "<< binaryToDecimal(n) << endl;
+    cout <<"Decimal num is: "<< binaryToDecimal(n) << endl;
 
     //Octal to decimal
-    //int n;
-    // cout<<"Enter a octal num to convert: ";
-    // cin>>n;
+    cout<<"Enter a binary num to convert: ";
+    cin>>n;
     
-    // cout <<"Octal num is: "<< binaryToOctal(n) << endl;
+    cout <<"Octal num is: "<< binaryToOctal(n) << endl;
 
-    //Hexadecimal to Decimal
+   // Hexadecimal to Decimal
     string m;
     cout<<"Enter a Hexadecimal num to convert: ";
     cin>>m;
@@ -77,11 +78,11 @@ int main () {
     cout <<"Decimal num is: "<< hexadecimalToDecimal(m) << endl;
 
     //Decimal to binary
-    int n;
+    
     cout<<"Enter a Decimal num to convert: ";
     cin>>n;
     
-    cout <<"Binary num is: "<< decimalToBinary(n) << endl;
-
-
+    cout << "Binary num is: " << decimalToBinary(n) << endl;
+    
+    return 0;
 }
