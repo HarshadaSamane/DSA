@@ -11,13 +11,13 @@ int main() {
     cout<<"Enter the size of array: ";
     cin>>n;
 
-    vector<int>arr(n);
+    int arr[n];
     
     for(int i=0; i<n; i++) {
         cin>>arr[i];
     }
 
-    const int N = 1e6+2;
+    const int N = 1e2+2;
     int idx[N];
 
     for(int i=0; i<N; i++) {
