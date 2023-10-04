@@ -18,6 +18,7 @@ int main() {
         }
     }
 
+    //spiral order print
     int row_start=0, row_end=n-1, column_start=0, column_end=m-1;
 
     while(row_start <= row_end && column_start <= column_end ) {
